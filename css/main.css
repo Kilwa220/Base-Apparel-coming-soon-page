@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+
+/* START GLOABLE VARIABLE */
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --linear-gradient-one: lineare-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+
+  --linear-gradient-two: lineare-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 80%, 86%)
+  );
+}
+/* END GLOABLE VARIABLE */
+/* START COMPENANTE */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 150px 0 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* END COMPENANTE */
+/* START BODY STYLE */
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+/* END BODY STYLE */
+/* START MAIN */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    max-width: 100%;
+    height: 110vh;
+  }
+  main > :first-child {
+    width: 60%;
+  }
+}
+/* END MAIN */
+/* START HEADER */
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  margin: 0;
+}
+/* END HEADER */
+/* START COMING-SOON */
+.coming-soon {
+  overflow: hidden;
+}
+
+.coming-soon .image {
+  width: calc(100% + 30px);
+  left: calc(15px * -1);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .coming-soon {
+    height: calc(100% - 100px);
+  }
+  .coming-soon .image {
+    display: none;
+  }
+}
+
+.coming-soon .image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.coming-soon .text-content {
+  padding: 40px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .coming-soon .text-content {
+    text-align: initial;
+  }
+}
+
+.coming-soon .text-content h1 {
+  font-size: 45px;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--dark-grayish-red);
+}
+
+@media (min-width: 768px) {
+  .coming-soon .text-content h1 {
+    font-size: 50px;
+    letter-spacing: 16px;
+    margin-bottom: 20px;
+  }
+}
+.coming-soon .text-content h1 span {
+  display: block;
+  letter-spacing: 12px;
+  color: var(--desaturated-red);
+}
+
+.coming-soon .text-content p {
+  color: var(--desaturated-red);
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.coming-soon .text-content form {
+  display: flex;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.coming-soon .text-content form input:focus {
+  outline: none;
+}
+
+.coming-soon .text-content form [type="email"] {
+  padding: 14px 130px 14px 15px;
+  margin: 0 auto;
+  border-radius: 25px;
+  width: 100%;
+  border: 2px solid hsl(0, 17.1%, 72.5%);
+  caret-color: var(--desaturated-red);
+  color: var(--dark-grayish-red);
+}
+
+.coming-soon .text-content form .error-icon {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.coming-soon .text-content form ::placeholder {
+  color: var(--desaturated-red);
+}
+.coming-soon .text-content form label {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  border-radius: 25px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+  width: 80px;
+  display: grid;
+  place-content: center;
+  box-shadow: 0 0 20px 0px #f7d7e1a3;
+  cursor: pointer;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.coming-soon .text-content form label:hover {
+  box-shadow: 0 0 20px 0px #f9d9e9a9;
+  transform: scale(1.1);
+}
+
+.coming-soon .text-content form [type="submit"] {
+  display: none;
+}
+
+.coming-soon .text-content span.error {
+  margin: -10px 0 0 5px;
+  color: red;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .coming-soon .text-content span.error {
+    padding-left: 15px;
+    text-align: initial;
+  }
+}
+
+/* END COMING-SOON */
+
+/* START ASIDE IMAGE */
+main aside:last-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main aside:last-child {
+    display: flex;
+    width: 40%;
+    overflow: hidden;
+  }
+
+  main aside:last-child img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* END ASIDE IMAGE */
+}
+
+/* START FOOTER */
+footer {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e19494;
+  font-size: 12px;
+}
+
+footer p {
+  color: white;
+}
+
+footer p a {
+  color: var(--pr-cyan);
+  text-decoration: none;
+}
+
+footer p a:focus,
+footer p a:hover {
+  color: var(--pr-blue);
+}
+footer p i {
+  color: red;
+  font-size: 14px;
+}
+/* END FOOTER */
