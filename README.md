@@ -32,7 +32,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Screenshot
 
-![](images/chalange-photo.png)
+![](design/desktop-design.jpg)
 
 ### Links
 
