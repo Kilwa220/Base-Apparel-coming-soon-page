@@ -36,7 +36,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Live Site URL: [Demo](https://kilwa220.github.io/article-preview-component/)
+- Live Site URL: [Demo](https://kilwa220.github.io/Base-Apparel-coming-soon-page/)
 
 ## My process
 
@@ -47,6 +47,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- javascript validation form
 
 ## Author
 
