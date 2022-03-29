@@ -197,18 +197,18 @@ header .container {
 /* END COMING-SOON */
 
 /* START ASIDE IMAGE */
-main aside:last-child {
+main .aside:last-child {
   display: none;
 }
 
 @media (min-width: 768px) {
-  main aside:last-child {
+  main .aside:last-child {
     display: flex;
     width: 40%;
     overflow: hidden;
   }
 
-  main aside:last-child img {
+  main .aside:last-child img {
     height: 100%;
     width: 100%;
     object-fit: cover;
